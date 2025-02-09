@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Specifies the target JavaScript version (ESNext for modern JS)
+    "module": "ESNext", // Use ESNext module syntax (needed for Rollup)
+    "strict": true, // Enables all strict type-checking options
+    "declaration": true, // Generates .d.ts files (for type declarations)
+    "declarationDir": "./dist", // Output .d.ts files into a types directory
+    "outDir": "./dist", // Output directory for the compiled JavaScript
+    "esModuleInterop": true, // Ensures compatibility with CommonJS modules
+    "skipLibCheck": true // Skip type checking of declaration files
+  },
+  "include": [
+    "src/**/*" // Include all TypeScript files under the src folder
+  ],
+  "exclude": ["node_modules"]
+}
